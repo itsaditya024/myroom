@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myroom | apartments</title>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+		<!-- header -->
+		<header class="header-section" style="padding: 10px;">
+			<!-- logo -->
+			<h1><i class="fa-solid fa-house-chimney"></i> myroom</h1>
+			<!-- back btn -->
+			<div class="btn-area">
+				<button class="logIn-btn"><a href="index.html">back to home</a></button>
+			</div>
+		</header>
+
+		<!-- Main Content-Section -->
+		<section class="main-section">
+
+			<!-- filter -->
+			<div class="aside-main-container">
+				<div class="aside-main-container">
+
+					<!-- aside -->
+					<aside>
+						<div class="asider-bar-container">
+							<div class="asider-bar-container-heading">
+								<h4>filters</h4>
+
+								<!-- type search -->
+								<div class="search-area">
+									<div class="search-box">
+										<i class="fa-solid fa-house-chimney"></i>
+										<input type="text" id="type" placeholder="type" onkeyup="searchType()">
+									</div>
+								</div>
+								<br>
+
+								<!-- location search -->
+								<div class="search-area">
+									<div class="search-box">
+										<i class="fa-solid fa-location-dot"></i>
+										<input type="text" id="location" placeholder="location" onkeyup="searchlocation()">
+									</div>
+								</div>
+								<br>
+
+								<!-- price search -->
+								<div class="search-area">
+									<div class="search-box">
+										<i class="fa-solid fa-indian-rupee-sign"></i>
+										<input type="number" id="price" placeholder="Price" onkeyup="searchPrice()">
+									</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			
+				<!-- apartment section -->	
+				<section class="content-section" style="width: 100%;" id="apartments">
+					<h2 class="title">Explore Apartments</h2>
+
+					<!-- house 1 -->			
+					<div id="house1" class="content-box" data-name="Panna Nakka" price="10000" data-value="Family Apartment">
+						<div class="img-container">
+							<div class="img-box1">
+								<img src="house-images/house1.jpg" style="width: 420px; height: 420px;">
+							</div>
+							<div class="img-box2">
+								<img src="house-images/bedroom.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/kitchen.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/garage.jpg" style="width: 200px; height: 200px;">
+								<div class="box3" style="text-align: center;">
+									<h4 style="text-transform: uppercase; letter-spacing: 1px;">Family Apartment</h4>
+									<p>2BHK + Garage</p>
+									<p><i class="fa-solid fa-indian-rupee-sign"></i><b> 10,000</b></p>
+									<p><i class="fa-solid fa-location-dot"></i> Panna Nakka</p>
+									<button class ="logIn-btn"><a href="booking-form.html">Request Booking</a>
+									</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- house 2 -->
+					<div id="house2" class="content-box" data-name="Mukhtiyarganj" price="8000" data-value="Double Apartment">
+						<div class="img-container">
+							<div class="img-box1">
+								<img src="house-images/house2.jpg" style="width: 420px; height: 420px;">
+							</div>
+							<div class="img-box2">
+								<img src="house-images/bedroom.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/kitchen.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/garden.jpg" style="width: 200px; height: 200px;">
+								<div class="box3" style="text-align: center;">
+									<h4 style="text-transform: uppercase; letter-spacing: 1px;">Family Apartment</h4>
+									<p>1BHK + Small Garden</p>
+									<p><i class="fa-solid fa-indian-rupee-sign"></i><b> 8,000</b></p>
+									<p><i class="fa-solid fa-location-dot"></i> Mukhtiyarganj</p>
+									<button class ="logIn-btn"><a href="booking-form.html">Request Booking</a>
+									</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- house 3 -->
+					<div id="house3" class="content-box" data-name="Civil Line" price="6000" data-value="Single Apartment">
+						<div class="img-container">
+							<div class="img-box1">
+								<img src="house-images/house3.jpg" style="width: 420px; height: 420px;">
+							</div>
+							<div class="img-box2">
+								<img src="house-images/bedroom.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/kitchen.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/garden.jpg" style="width: 200px; height: 200px;">
+								<div class="box3" style="text-align: center;">
+									<h4 style="text-transform: uppercase; letter-spacing: 1px;">Family Apartment</h4>
+									<p>1BHK + Small Gallery</p>
+									<p><i class="fa-solid fa-indian-rupee-sign"></i><b> 6,000</b></p>
+									<p><i class="fa-solid fa-location-dot"></i> Civil Line</p>
+									<button class ="logIn-btn"><a href="booking-form.html">Request Booking</a>
+									</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- house 4 -->
+					<div id="house4" class="content-box" data-name="Prem Vihar Colony" price="12000" data-value="Single Apartment">
+						<div class="img-container">
+							<div class="img-box1">
+								<img src="house-images/house4.jpg" style="width: 420px; height: 420px;">
+							</div>
+							<div class="img-box2">
+								<img src="house-images/bedroom.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/kitchen.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/garden.jpg" style="width: 200px; height: 200px;">
+								<div class="box3" style="text-align: center;">
+									<h4 style="text-transform: uppercase; letter-spacing: 1px;">Family Apartment</h4>
+									<p>3BHK + Garden</p>
+									<p><i class="fa-solid fa-indian-rupee-sign"></i><b> 12,000</b></p>
+									<p><i class="fa-solid fa-location-dot"></i> Prem Vihar Colony</p>
+									<button class ="logIn-btn"><a href="booking-form.html">Request Booking</a>
+									</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- house 5 -->
+					<div id="house5" class="content-box" data-name="Bharhut Nagar" price="15000" data-value="Double Apartment"> 
+						<div class="img-container">
+							<div class="img-box1">
+								<img src="house-images/house5.jpg" style="width: 420px; height: 420px;">
+							</div>
+							<div class="img-box2">
+								<img src="house-images/bedroom.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/kitchen.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/swimming.jpg" style="width: 200px; height: 200px;">
+								<div class="box3" style="text-align: center;">
+									<h4 style="text-transform: uppercase; letter-spacing: 1px;">Family Apartment</h4>
+									<p>3BHK + Swimming Pool</p>
+									<p><i class="fa-solid fa-indian-rupee-sign"></i><b> 15,000</b></p>
+									<p><i class="fa-solid fa-location-dot"></i> Bharhut Nagar</p>
+									<button class ="logIn-btn"><a href="booking-form.html">Request Booking</a>
+									</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- house 6 -->
+					<div id="house6" class="content-box" data-name="Sindhi Camp" price="5000" data-value="Single Apartment">
+						<div class="img-container">
+							<div class="img-box1">
+								<img src="house-images/house6.jpg" style="width: 420px; height: 420px;">
+							</div>
+							<div class="img-box2">
+								<img src="house-images/bedroom.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/kitchen.jpg" style="width: 200px; height: 200px;">
+								<img src="house-images/garden.jpg" style="width: 200px; height: 200px;">
+								<div class="box3" style="text-align: center;">
+									<h4 style="text-transform: uppercase; letter-spacing: 1px;">Family Apartment</h4>
+									<p>1BHK + Small Garden</p>
+									<p><i class="fa-solid fa-indian-rupee-sign"></i><b> 5,000</b></p>
+									<p><i class="fa-solid fa-location-dot"></i> Sindhi Camp</p>
+									<button class ="logIn-btn"><a href="booking-form.html">Request Booking</a>
+									</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+			</div>
+			</section>	
+		</section>
+
+		<!-- footer -->		
+		<footer>
+			<div class="footer-container">
+				<div class="footer-box">
+					<h2><i class="fa-solid fa-house-chimney"></i> myroom</h2>
+				</div>
+				<div class="footer-box">
+					<li><a href="mailto:myroom@mail.com"><i class="fa-solid fa-envelope"></i> myroom@mail.com</a></li>
+					<li><a href="tel:91 1234567890"><i class="fa-solid fa-phone"></i> +91 1234567890</a></li>
+				</div>
+            </div>
+            <div class="footer-container" style="border-top: 1px solid #808080;">
+				<div class="footer-box">
+					<h3>company</h3>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="#apartments">Apartments</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</div>
+				<div class="footer-box">
+					<h3>learn more</h3>
+					<li><a href="about.html#privacy">Privacy</a></li>
+					<li><a href="about.html#term&conditions">Terms & Conditions</a></li>
+					<li><a href="about.html#FAQs">FAQs</a></li>
+				</div>
+				<div class="footer-box">
+					<h3>follow us</h3>
+					<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>&nbsp;Instragram</a></li>
+					<li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i>&nbsp; Facebook</a></li>
+					<li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i>&nbsp; LinkedIn</a></li>
+                </div>
+            </div>
+            <div class="footer-last-box">
+                <p>&copy; 2024 myroom, All Rights Reserved.</p>
+            </div>
+        </footer>
+</div>
+
+<!-- javascript -->
+<script src="script.js"></script>
+</body>
+</html>

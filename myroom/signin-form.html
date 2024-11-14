@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myroom | signin</title>
+    <!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+		<header class="header-section" style="padding: 10px;">
+			<!-- logo -->
+			<h1><i class="fa-solid fa-house-chimney"></i> myroom</h1>
+			<!-- back btn -->
+			<div class="btn-area">
+				<button class="logIn-btn"><a href="index.html">back to home</a></button>
+			</div>
+		</header>
+        <div class="form-container">
+            <form method="POST">
+                <h2 class="heading">Sign In | <a href="signup-form.html" class="link-color">Sign Up</a></h2>       
+                <input name="username" type="text" placeholder="Username"/>
+                <input name="password" type="password" placeholder="Password"/>
+                <p style="text-align: right; padding-right: 3rem;"><a href="forget-password-form.html" class="link-color">Forget Password?</a></p>
+                <button name="signin-btn" style="margin-bottom: 2rem;">Sign In</button>
+            </form>     
+        </div>
+        <p style="text-align: center;">&copy; 2024 myroom, All Rights Reserved.</p>
+    </div>
+</body>
+</html>
